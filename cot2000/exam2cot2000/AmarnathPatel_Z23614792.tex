@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\title{Exam 2}
+\author{Amarnath Patel Z23614792}
+\date{\today}
+
+\maketitle
+
+\subsection*{1. Truth Table for $(p \wedge r) \leftrightarrow (q \wedge r)$}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $p \wedge r$ & $q \wedge r$ & $(p \wedge r) \leftrightarrow (q \wedge r)$ \\
+\hline
+T & T & T & T & T & T \\
+T & T & F & F & F & T \\
+T & F & T & T & F & F \\
+T & F & F & F & F & T \\
+F & T & T & F & T & F \\
+F & T & F & F & F & T \\
+F & F & T & F & F & T \\
+F & F & F & F & F & T \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{2. Rewriting Statement Forms}
+
+For $p \vee \neg q \rightarrow r$:
+
+(a) Using $p \rightarrow q \equiv \neg p \vee q$:
+    $\neg(p \vee \neg q) \vee r$
+    
+(b) Using $p \vee q \equiv \neg(\neg p \wedge \neg q)$:
+    $\neg(\neg(\neg p \wedge q) \wedge \neg r)$
+
+\subsection*{3. Negations, Contrapositives, Converses, and Inverses}
+
+(a) Original: If P is a triangle, then P is an equilateral triangle.
+   
+   Negation: P is a triangle and P is not an equilateral triangle.
+   
+   Contrapositive: If P is not an equilateral triangle, then P is not a triangle.
+   
+   Converse: If P is an equilateral triangle, then P is a triangle.
+   
+   Inverse: If P is not a triangle, then P is not an equilateral triangle.
+
+(b) Original: If John is Mike's brother, then Sarah is his sister and Paul is his cousin.
+   
+   Negation: John is Mike's brother and either Sarah is not his sister or Paul is not his cousin.
+   
+   Contrapositive: If Sarah is not his sister or Paul is not his cousin, then John is not Mike's brother.
+   
+   Converse: If Sarah is his sister and Paul is his cousin, then John is Mike's brother.
+   
+   Inverse: If John is not Mike's brother, then Sarah is not his sister or Paul is not his cousin.
+
+\subsection*{4. Identifying Converse Error}
+
+The argument form that exhibits the converse error is (a):
+
+If Alice finished her project, then she will present it.
+Alice presented her project.
+Therefore, Alice finished her project.
+
+This is the converse of the original implication and is not a valid logical conclusion.
+
+\subsection*{5. Validity of Argument Forms}
+
+(a) $(p \vee q) \rightarrow \neg r$, $\neg p \wedge q$, $q \rightarrow p$ $\therefore \neg r$
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $(p \vee q) \rightarrow \neg r$ & $\neg p \wedge q$ & $q \rightarrow p$ & $\neg r$ \\
+\hline
+T & T & T & F & F & T & F \\
+T & T & F & T & F & T & T \\
+T & F & T & T & F & T & F \\
+T & F & F & T & F & T & T \\
+F & T & T & F & T & F & F \\
+F & T & F & T & T & F & T \\
+F & F & T & T & F & T & F \\
+F & F & F & T & F & T & T \\
+\hline
+\end{tabular}
+\end{center}
+
+This argument form is invalid. There is a row (F, T, T) where all premises are true but the conclusion is false.
+
+(b) $p \rightarrow q$, $r \rightarrow q$ $\therefore (p \vee r) \rightarrow q$
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $p \rightarrow q$ & $r \rightarrow q$ & $(p \vee r) \rightarrow q$ \\
+\hline
+T & T & T & T & T & T \\
+T & T & F & T & T & T \\
+T & F & T & F & F & F \\
+T & F & F & F & T & F \\
+F & T & T & T & T & T \\
+F & T & F & T & T & T \\
+F & F & T & T & F & F \\
+F & F & F & T & T & T \\
+\hline
+\end{tabular}
+\end{center}
+
+This argument form is valid. In every row where both premises are true, the conclusion is also true.
+
+\subsection*{6. Predicate Q(x): $x^2 < 2x$}
+
+(a) Q(1): $1^2 < 2(1)$ is true (1 < 2)
+    Q(2): $2^2 < 2(2)$ is false (4 > 4)
+    Q(0): $0^2 < 2(0)$ is false (0 = 0)
+    Q(-1): $(-1)^2 < 2(-1)$ is false (1 > -2)
+    Q(3): $3^2 < 2(3)$ is false (9 > 6)
+
+(b) Truth set for domain R: (0, 2)
+
+(c) Truth set for domain R+: (0, 2)
+
+\subsection*{7. Truth Set for R(x): $x^2 - 5x + 6 = 0$}
+
+The correct answer is (a) {2, 3}.
+
+Explanation: We can factor the equation as $(x-2)(x-3) = 0$. The solutions are x = 2 and x = 3.
+
+\subsection*{8. Formal Negations}
+
+(a) $\exists$ birds x such that x cannot fly.
+(b) $\exists$ cars c such that c does not have wheels.
+(c) $\forall$ buildings b, b is not over 100 stories tall.
+(d) $\forall$ trees t, t is not over 100 years old.
+
+\subsection*{9. Representation of "Every engineering major is also a physics major"}
+
+The correct answer is (a) $\forall s \in D, M(s) \Rightarrow S(s)$
+
+This statement reads as "For all students s in D, if s is an engineering major, then s is a physics major," which correctly represents the given statement.
+
+\end{document}

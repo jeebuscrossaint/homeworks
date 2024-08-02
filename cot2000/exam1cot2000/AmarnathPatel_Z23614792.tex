@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item Sets A and B are equal to each other.
+        \item $|A| = |B| = 3$, $|C| = 3$, $|D| = 3$, $|E| = 3$, $|F| = 3$
+        \item 
+        \begin{enumerate}
+            \item True
+            \item False
+            \item True
+            \item True
+            \item True
+        \end{enumerate}
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $V = \{-2, -1, 0, 1, 2, 3, 4, 5, 6\}$, $|V| = 9$
+        \item $V = \{t \in \mathbb{Z} | t < -3\} \cup \{t \in \mathbb{Z} | t > 7\}$, $|V| = \infty$
+        \item $B \times A = \{(x, p), (x, q), (x, r), (y, p), (y, q), (y, r)\}$, $|B \times A| = 6$
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $A \times B = \{(m, g), (m, h), (n, g), (n, h), (o, g), (o, h), (p, g), (p, h)\}$, $|A \times B| = 8$
+        \item $B \times A = \{(g, m), (g, n), (g, o), (g, p), (h, m), (h, n), (h, o), (h, p)\}$, $|B \times A| = 8$
+        \item $A \times A = \{(m, m), (m, n), (m, o), (m, p), (n, m), (n, n), (n, o), (n, p), (o, m), (o, n), (o, o), (o, p), (p, m), (p, n), (p, o), (p, p)\}$, $|A \times A| = 16$
+        \item $B \times B = \{(g, g), (g, h), (h, g), (h, h)\}$, $|B \times B| = 4$
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $A \times B = \{(10, 2), (10, 3), (10, 4), (11, 2), (11, 3), (11, 4), (12, 2), (12, 3), (12, 4)\}$
+        \item 
+        \begin{enumerate}
+            \item No
+            \item Yes
+        \end{enumerate}
+        \item $R = \{(10, 2), (11, 3), (12, 4)\}$
+        \item Domain of R is A and co-domain of R is B.
+        \item R is a function because every element in A is related to exactly one element in B.
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item 
+        \begin{enumerate}
+            \item $p \land q$
+            \item $r \lor \neg q$
+            \item $\neg (p \land r)$
+            \item $\neg r \land \neg q$
+        \end{enumerate}
+        \item 
+        \begin{enumerate}
+            \item False
+            \item True
+            \item False
+            \item True
+            \item False
+            \item True
+        \end{enumerate}
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item 
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            $p$ & $q$ & $r$ & $p \lor (\neg q \land r)$ \\
+            \hline
+            T & T & T & T \\
+            T & T & F & T \\
+            T & F & T & T \\
+            T & F & F & T \\
+            F & T & T & F \\
+            F & T & F & F \\
+            F & F & T & T \\
+            F & F & F & F \\
+            \hline
+        \end{tabular}
+        \item 
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            $p$ & $q$ & $r$ & $(p \lor q) \land (\neg p \lor (q \land \neg r))$ \\
+            \hline
+            T & T & T & T \\
+            T & T & F & T \\
+            T & F & T & T \\
+            T & F & F & F \\
+            F & T & T & T \\
+            F & T & F & T \\
+            F & F & T & F \\
+            F & F & F & F \\
+            \hline
+        \end{tabular}
+        \item $p \land (p \lor q)$ is equivalent to $p$ because $p \land (p \lor q) = p \land \top = p$
+    \end{enumerate}
+    \item $(p \oplus q) \land r = (p \land \neg q \lor \neg p \land q) \land r$ because the definition of Exclusive OR is $p \oplus q = p \land \neg q \lor \neg p \land q$
+\end{enumerate}
+
+\end{document}

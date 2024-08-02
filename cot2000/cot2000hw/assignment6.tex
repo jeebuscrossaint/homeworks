@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Assignment 5, Questions Chosen: 3, 13, 22, 29, 31}
+\author{Amarnath Patel}
+\date{\today}
+
+
+\maketitle
+
+\section{Question 3}
+\begin{align*}
+    \text{Smallest class size} &= 26 \times 26 + 1 \\
+    &= 676 + 1 \\
+    &= 677
+    \end{align*}
+    
+    \text{Where:}
+    \begin{itemize}
+        \item 26 = \text{number of possible first initials}
+        \item 26 = \text{number of possible last initials}
+        \item 1 \text{ is added to exceed the maximum unique combinations}
+    \end{itemize}
+
+\section{Question 13}
+\begin{align*}
+    \text{Number of integers} &= 9 \times 9 \times 9 \\
+    &= 9^3 \\
+    &= 729
+    \end{align*}
+    
+    \text{Where:}
+    \begin{itemize}
+        \item 9 \text{ choices for hundreds place } (1-9, \text{excluding } 7)
+        \item 9 \text{ choices for tens place } (0-9, \text{excluding } 7)
+        \item 9 \text{ choices for ones place } (0-9, \text{excluding } 7)
+    \end{itemize}
+
+\section{Question 22}
+\begin{align*}
+    \text{Number of ways} &= 1000 \times 999 \times 998 \\
+    &= 1000 \times 999 \times 998 \\
+    &= 997,002,000
+    \end{align*}
+    
+    \text{This is equivalent to the permutation:}
+    \begin{equation}
+    P(1000, 3) = \frac{1000!}{(1000-3)!} = \frac{1000!}{997!}
+    \end{equation}
+
+\section{Question 29}
+\begin{align*}
+    \text{Number of seating arrangements} &= 5! \times 2 \times 3! \times 3! \\
+    &= 120 \times 2 \times 6 \times 6 \\
+    &= 8,640
+    \end{align*}
+    
+    \text{Where:}
+    \begin{itemize}
+        \item 5! \text{ : arrangements of the other 5 people relative to the president}
+        \item 2 \text{ : ways to alternate math and CS majors (MCMCMC or CMCMCM)}
+        \item 3! \text{ : permutations of math majors among their positions}
+        \item 3! \text{ : permutations of CS majors among their positions}
+    \end{itemize}
+
+\section{Question 31}
+\begin{align*}
+    \text{Number of possible committees} &= \binom{10}{3} \times \binom{25}{4} \\[6pt]
+    &= \frac{10!}{3!(10-3)!} \times \frac{25!}{4!(25-4)!} \\[6pt]
+    &= \frac{10!}{3!7!} \times \frac{25!}{4!21!} \\[6pt]
+    &= 120 \times 12,650 \\[6pt]
+    &= 1,518,000
+    \end{align*}
+    
+    \text{Where:}
+    \begin{itemize}
+        \item $\binom{10}{3}$: ways to choose 3 faculty members from 10
+        \item $\binom{25}{4}$: ways to choose 4 students from 25
+    \end{itemize}
+
+\end{document}

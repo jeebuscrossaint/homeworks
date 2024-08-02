@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\title{Assignment 3}
+\author{Amarnath Patel}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 1}
+\subsection{Part (a)}
+This loop will repeat exactly $N$ times if it does not contain a stop or a go to.
+\begin{itemize}
+    \item If this loop does not contain a stop or a go to, then it will repeat exactly $N$ times.
+\end{itemize}
+
+\subsection{Part (b)}
+Freeze or I’ll shoot.
+\begin{itemize}
+    \item If you do not freeze, then I’ll shoot.
+\end{itemize}
+
+\subsection{Part (c)}
+Fix my ceiling or I won’t pay my rent.
+\begin{itemize}
+    \item If you do not fix my ceiling, then I won’t pay my rent.
+\end{itemize}
+
+\section{Question 2}
+\subsection{Part (a)}
+$\sim p \lor q \to \sim q$
+\begin{tabular}{|c|c|c|c|c|}
+    \hline
+    $p$ & $q$ & $\sim p$ & $\sim p \lor q$ & $(\sim p \lor q) \to \sim q$ \\
+    \hline
+    T & T & F & T & F \\
+    T & F & F & F & T \\
+    F & T & T & T & F \\
+    F & F & T & T & T \\
+    \hline
+\end{tabular}
+
+\subsection{Part (b)}
+$(p \lor q) \lor (\sim p \land q) \to q$
+\begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $p$ & $q$ & $\sim p$ & $\sim p \land q$ & $(p \lor q) \lor (\sim p \land q)$ & $((p \lor q) \lor (\sim p \land q)) \to q$ \\
+    \hline
+    T & T & F & F & T & T \\
+    T & F & F & F & T & F \\
+    F & T & T & T & T & T \\
+    F & F & T & F & F & T \\
+    \hline
+\end{tabular}
+
+\subsection{Part (c)}
+$(p \to r) \leftrightarrow (q \to r)$
+\begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $p$ & $q$ & $r$ & $p \to r$ & $q \to r$ & $(p \to r) \leftrightarrow (q \to r)$ \\
+    \hline
+    T & T & T & T & T & T \\
+    T & T & F & F & F & T \\
+    T & F & T & T & T & T \\
+    T & F & F & F & T & F \\
+    F & T & T & T & T & T \\
+    F & T & F & T & F & F \\
+    F & F & T & T & T & T \\
+    F & F & F & T & T & T \\
+    \hline
+\end{tabular}
+
+\section{Question 3}
+\subsection{Part (a)}
+$\sim p \to q$
+\begin{itemize}
+    \item If $p \to q$ is false, then $p$ is true and $q$ is false. Therefore, $\sim p$ is false and $\sim p \to q$ is true.
+\end{itemize}
+
+\subsection{Part (b)}
+$p \lor q$
+\begin{itemize}
+    \item Since $p$ is true and $q$ is false, $p \lor q$ is true.
+\end{itemize}
+
+\subsection{Part (c)}
+$q \to p$
+\begin{itemize}
+    \item Since $q$ is false and $p$ is true, $q \to p$ is true.
+\end{itemize}
+
+\section{Question 4}
+\subsection{Part (a)}
+$p \land \sim q \to r$
+\begin{itemize}
+    \item Using $p \to q \equiv \sim p \lor q$: 
+    \item $\sim(p \land \sim q) \lor r$
+    \item $\equiv (\sim p \lor q) \lor r$
+\end{itemize}
+
+\subsection{Part (b)}
+$p \lor \sim q \to r \lor q$
+\begin{itemize}
+    \item Using $p \to q \equiv \sim p \lor q$:
+    \item $\sim (p \lor \sim q) \lor (r \lor q)$
+    \item $\equiv (\sim p \land q) \lor (r \lor q)$
+\end{itemize}
+
+\subsection{Part (c)}
+$(p \to r) \leftrightarrow (q \to r)$
+\begin{itemize}
+    \item Using $p \leftrightarrow q \equiv (\sim p \lor q) \land (\sim q \lor p)$: 
+    \item $(\sim p \lor r) \land (\sim r \lor p) \equiv (\sim q \lor r) \land (\sim r \lor q)$
+\end{itemize}
+
+\subsection{Part (d)}
+$(p \to (q \to r)) \leftrightarrow ((p \land q) \to r)$
+\begin{itemize}
+    \item Using $p \to q \equiv \sim p \lor q$ and $p \leftrightarrow q \equiv (\sim p \lor q) \land (\sim q \lor p)$: 
+    \item $(\sim p \lor (\sim q \lor r)) \equiv (\sim(p \land q) \lor r)$
+    \item $\equiv (\sim p \lor \sim q \lor r) \equiv (\sim p \lor \sim q \lor r)$
+\end{itemize}
+
+\section{Question 5}
+\subsection{Part (a)}
+If $P$ is a rectangle, then $P$ is a square.
+\begin{itemize}
+    \item Negation: $P$ is a rectangle and $P$ is not a square.
+    \item Contrapositive: If $P$ is not a square, then $P$ is not a rectangle.
+    \item Converse: If $P$ is a square, then $P$ is a rectangle.
+    \item Inverse: If $P$ is not a rectangle, then $P$ is not a square.
+\end{itemize}
+
+\section{Question 6}
+\begin{enumerate}
+    \item[(a)] Let $p$ be "Jules solved this problem correctly" and $q$ be "Jules obtained the answer 2". The argument is $p \to q, q \therefore p$. This is the converse error.
+    \item[(b)] Let $p$ be "I go to the movies", $q$ be "I won’t finish my homework", and $r$ be "I won’t do well on the exam tomorrow". The argument is $p \to q, q \to r \therefore p \to r$. This is a valid argument by the rule of Hypothetical Syllogism.
+    \item[(c)] Let $p$ be "At least one of these two numbers is divisible by 6" and $q$ be "The product of these two numbers is divisible by 6". The argument is $p \to q, \sim p \therefore \sim q$. This is a valid argument by the rule of Modus Tollens.
+    \item[(d)] Let $p$ be "This computer program is correct" and $q$ be "It produces the correct output when run with the test data my teacher gave me". The argument is $p \to q, q \therefore p$. This is the converse error.
+    \item[(e)] Let $p$ be "Sandra knows Java" and $q$ be "Sandra knows C++". The argument is $p \land q \therefore q$. This is a valid argument by the rule of Simplification.
+\end{enumerate}
+
+\end{document}

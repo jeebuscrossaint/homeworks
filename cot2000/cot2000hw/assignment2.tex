@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Assignment 2}
+\author{Amarnath Patel}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item
+\begin{enumerate}
+\item \(h \land w \land \sim s\)
+\item \(\sim w \land h \land s\)
+\item \(\sim h \land \sim w \land \sim s\)
+\item \(\sim w \land \sim s \land h\)
+\item \(w \land \sim (h \land s)\)
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item 
+
+\begin{tabular}{|c c|c|}
+\hline
+p & q & \(\sim (p \land q) \lor (p \lor q)\) \\ [0.5ex] 
+\hline
+T & T & T \\ 
+T & F & T \\
+F & T & T \\
+F & F & T \\
+\hline
+\end{tabular}
+
+\item 
+
+\begin{tabular}{|c c c|c|}
+\hline
+p & q & r & \(p \land (\sim q \lor r)\) \\ [0.5ex] 
+\hline
+T & T & T & T \\ 
+T & T & F & F \\
+T & F & T & T \\
+T & F & F & T \\
+F & T & T & F \\
+F & T & F & F \\
+F & F & T & F \\
+F & F & F & F \\
+\hline
+\end{tabular}
+
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item \(p \lor (p \land q)\) and \(q\) are not logically equivalent because their truth tables are not the same.
+\item \(\sim (p \land q)\) and \(\sim p \land \sim q\) are logically equivalent because their truth tables are the same.
+\item \(p \land (q \lor r)\) and \((p \land q) \lor (p \land r)\) are logically equivalent because their truth tables are the same.
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item \(\sim (-2 < x < 6) \rightarrow x \leq -2 \lor x \geq 6\)
+\item \(\sim (-9 < x < 2) \rightarrow x \leq -9 \lor x \geq 2\)
+\item \(\sim (x < 2 \lor x > 6) \rightarrow x \geq 2 \land x \leq 6\)
+\item \(\sim (x \leq -1 \lor x > 1) \rightarrow x > -1 \land x \leq 1\)
+\item \(\sim (0 > x \geq -4) \rightarrow x \leq 0 \land x < -4\)
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item \((p \land q) \lor (\sim p \lor (p \land \sim q))\) is a tautology.
+\item \((p \land \sim q) \land (\sim p \lor q)\) is a contradiction.
+\item \(((\sim p \land q) \land (q \land r)) \lor \sim q\) is neither a tautology nor a contradiction.
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item Let \(b\) represent "Bob is a double math and computer science major" and \(a\) represent "Ann is a math major". Then the statement is \(b \land a \land \sim a\).
+\item The statement is \(\sim (b \land a) \land a \land b\). The two statements are not logically equivalent.
+\end{enumerate}
+
+\item \((p \oplus q) \oplus r \equiv p \oplus (q \oplus r)\) by the associative law of exclusive or.
+
+\item
+\begin{enumerate}
+\item \((p \land \sim q) \lor (p \land q) \equiv p \land (\sim q \lor q)\) by distributive law.
+\item \(p \land (\sim q \lor q) \equiv p \land t\) by law of excluded middle.
+\item \(p \land t \equiv p\) by identity law.
+\end{enumerate}
+
+\item \((p \land \sim q) \lor p \equiv p\) by absorption law.
+
+\item \(\sim ((\sim p \land q) \lor (\sim p \land \sim q)) \lor (p \land q) \equiv p\) by De Morgan's law and law of excluded middle.
+
+\end{enumerate}
+
+\end{document}
