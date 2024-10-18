@@ -1,25 +1,30 @@
-def two_largest(A):
-    large_1 = 0
-    large_2 = 0
+# Function to find two largest numbers in a list
 
-    for num in A:
+def two_largest(arr):
+    large_1 = float('-inf')  # Set initial value to negative infinity
+    large_2 = float('-inf')
+    
+    for num in arr:
         if num > large_1:
             large_2 = large_1
             large_1 = num
         elif num > large_2:
             large_2 = num
+    
+    return large_1, large_2
 
-    print(f"The two largest numbers are: {large_1} and {large_2}")
+# Get user input for the list
+def get_user_input():
+    arr = list(map(int, input("Enter numbers separated by spaces: ").split()))
+    return arr
 
-def main():
-    n = int(input("Enter the size of the list: "))
-    A = []
-
-    print("Enter the elements of the list: ")
-    for _ in range(n):
-        A.append(int(input()))
-
-    two_largest(A)
-
+# Main execution
 if __name__ == "__main__":
-    main()
+    # Get user input
+    arr = get_user_input()
+    
+    # Find two largest numbers
+    large_1, large_2 = two_largest(arr)
+    
+    # Output the result
+    print(f"The two largest numbers are: {large_1} and {large_2}")

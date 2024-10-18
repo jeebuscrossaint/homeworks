@@ -1,27 +1,32 @@
+# Selection Sort implementation
+
 def selection_sort(arr):
     n = len(arr)
-    for i in range(n - 1):
+    # Traverse through all array elements
+    for i in range(n-1):
+        # Find the index of the maximum element in remaining unsorted array
         max_index = i
-        for j in range(i + 1, n):
+        for j in range(i+1, n):
             if arr[j] > arr[max_index]:
                 max_index = j
+        # Swap the found maximum element with the first element
         arr[i], arr[max_index] = arr[max_index], arr[i]
 
-def main():
-    n = int(input("Enter the size of the array: "))
+# Input from the user
+def get_user_input():
+    array_size = int(input("Enter the size of the array: "))
+    array = []
+    for i in range(array_size):
+        value = int(input(f"Enter value {i+1}: "))
+        array.append(value)
+    return array
 
-    arr = []
-    print("Enter the elements of the array: ")
-    for _ in range(n):
-        arr.append(int(input()))
-
-    print("Unsorted array: ", end="")
-    print(" ".join(map(str, arr)))
-
-    selection_sort(arr)
-
-    print("Sorted array: ", end="")
-    print(" ".join(map(str, arr)))
-
+# Main execution
 if __name__ == "__main__":
-    main()
+    # Get user input
+    arr = get_user_input()
+    print("Unsorted array:", arr)
+    
+    # Sort the array
+    selection_sort(arr)
+    print("Sorted array:", arr)
