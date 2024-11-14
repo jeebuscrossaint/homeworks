@@ -1,0 +1,145 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Mux4to1_AmarnathPatelVHDL
+# storage
+db|Mux16to1_AmarnathPatel.(1).cnf
+db|Mux16to1_AmarnathPatel.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux4to1_amarnathpatelvhdl.vhd
+eda14340655b829613de1b8d5cdb324
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(sel)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Mux4to1_AmarnathPatelVHDL:MUX4_1
+Mux4to1_AmarnathPatelVHDL:MUX4_2
+Mux4to1_AmarnathPatelVHDL:MUX4_3
+Mux4to1_AmarnathPatelVHDL:MUX4_4
+}
+# lmf
+d:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Mux2to1_AmarnathPatelVHDL
+# storage
+db|Mux16to1_AmarnathPatel.(2).cnf
+db|Mux16to1_AmarnathPatel.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux2to1_amarnathpatelvhdl.vhd
+5060de3e31942dcaf75307c3482a30
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Mux4to1_AmarnathPatelVHDL:MUX4_1|Mux2to1_AmarnathPatelVHDL:MUX1
+Mux4to1_AmarnathPatelVHDL:MUX4_1|Mux2to1_AmarnathPatelVHDL:MUX2
+Mux4to1_AmarnathPatelVHDL:MUX4_1|Mux2to1_AmarnathPatelVHDL:MUX3
+Mux4to1_AmarnathPatelVHDL:MUX4_2|Mux2to1_AmarnathPatelVHDL:MUX1
+Mux4to1_AmarnathPatelVHDL:MUX4_2|Mux2to1_AmarnathPatelVHDL:MUX2
+Mux4to1_AmarnathPatelVHDL:MUX4_2|Mux2to1_AmarnathPatelVHDL:MUX3
+Mux4to1_AmarnathPatelVHDL:MUX4_3|Mux2to1_AmarnathPatelVHDL:MUX1
+Mux4to1_AmarnathPatelVHDL:MUX4_3|Mux2to1_AmarnathPatelVHDL:MUX2
+Mux4to1_AmarnathPatelVHDL:MUX4_3|Mux2to1_AmarnathPatelVHDL:MUX3
+Mux4to1_AmarnathPatelVHDL:MUX4_4|Mux2to1_AmarnathPatelVHDL:MUX1
+Mux4to1_AmarnathPatelVHDL:MUX4_4|Mux2to1_AmarnathPatelVHDL:MUX2
+Mux4to1_AmarnathPatelVHDL:MUX4_4|Mux2to1_AmarnathPatelVHDL:MUX3
+Mux2to1_AmarnathPatelVHDL:MUX2_1
+Mux2to1_AmarnathPatelVHDL:MUX2_2
+Mux2to1_AmarnathPatelVHDL:MUX2_FINAL
+}
+# lmf
+d:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Mux16to1_AmarnathPatelVHDL
+# storage
+db|Mux16to1_AmarnathPatel.(0).cnf
+db|Mux16to1_AmarnathPatel.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux16to1_amarnathpatelvhdl.vhd
+cf3f61a39e88b79d50988c2174bdfa2e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+d:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,73 @@
+|Adder4_AmarnathPatelVHDL
+A[0] => FullAdder_AmarnathPatelVHDL:F0.A
+A[1] => FullAdder_AmarnathPatelVHDL:F1.A
+A[2] => FullAdder_AmarnathPatelVHDL:F2.A
+A[3] => FullAdder_AmarnathPatelVHDL:F3.A
+B[0] => FullAdder_AmarnathPatelVHDL:F0.B
+B[1] => FullAdder_AmarnathPatelVHDL:F1.B
+B[2] => FullAdder_AmarnathPatelVHDL:F2.B
+B[3] => FullAdder_AmarnathPatelVHDL:F3.B
+Cin => FullAdder_AmarnathPatelVHDL:F0.CIN
+S[0] <= FullAdder_AmarnathPatelVHDL:F0.Sum
+S[1] <= FullAdder_AmarnathPatelVHDL:F1.Sum
+S[2] <= FullAdder_AmarnathPatelVHDL:F2.Sum
+S[3] <= FullAdder_AmarnathPatelVHDL:F3.Sum
+Cout <= FullAdder_AmarnathPatelVHDL:F3.Cout
+
+
+|Adder4_AmarnathPatelVHDL|FullAdder_AmarnathPatelVHDL:F0
+A => nand_out[0].IN0
+A => nand_out[1].IN1
+A => nand_out[7].IN1
+B => nand_out[0].IN1
+B => nand_out[2].IN1
+B => nand_out[8].IN1
+CIN => nand_out[4].IN1
+CIN => nand_out[6].IN1
+CIN => nand_out[10].IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4_AmarnathPatelVHDL|FullAdder_AmarnathPatelVHDL:F1
+A => nand_out[0].IN0
+A => nand_out[1].IN1
+A => nand_out[7].IN1
+B => nand_out[0].IN1
+B => nand_out[2].IN1
+B => nand_out[8].IN1
+CIN => nand_out[4].IN1
+CIN => nand_out[6].IN1
+CIN => nand_out[10].IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4_AmarnathPatelVHDL|FullAdder_AmarnathPatelVHDL:F2
+A => nand_out[0].IN0
+A => nand_out[1].IN1
+A => nand_out[7].IN1
+B => nand_out[0].IN1
+B => nand_out[2].IN1
+B => nand_out[8].IN1
+CIN => nand_out[4].IN1
+CIN => nand_out[6].IN1
+CIN => nand_out[10].IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4_AmarnathPatelVHDL|FullAdder_AmarnathPatelVHDL:F3
+A => nand_out[0].IN0
+A => nand_out[1].IN1
+A => nand_out[7].IN1
+B => nand_out[0].IN1
+B => nand_out[2].IN1
+B => nand_out[8].IN1
+CIN => nand_out[4].IN1
+CIN => nand_out[6].IN1
+CIN => nand_out[10].IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+

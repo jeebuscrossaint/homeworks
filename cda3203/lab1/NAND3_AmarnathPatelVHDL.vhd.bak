@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity NAND3_AmarnathPatelVHDL is 
+    Port (a : in STD_LOGIC;
+          b : in STD_LOGIC;
+          c : in STD_LOGIC;
+          y : out STD_LOGIC
+          );
+end NAND3_AmarnathPatelVHDL;
+
+architecture a of NAND3_AmarnathPatelVHDL is
+    signal ab_nand : STD_LOGIC;
+    signal temp : STD_LOGIC;
+begin
+    ab_nand <= a nand b;
+    temp <= ab_nand nand ab_nand;
+    y <= ab_nand nand c;
+end a;

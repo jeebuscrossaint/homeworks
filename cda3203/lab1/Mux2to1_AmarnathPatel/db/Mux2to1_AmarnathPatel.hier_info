@@ -1,0 +1,8 @@
+|Mux2to1_AmarnathPatelVHDL
+s => w3.IN0
+s => w2.IN0
+x => w2.IN1
+y => w3.IN1
+mux <= mux~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,55 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Mux8to1_AmarnathPatelVHDL is
+    Port (
+        I : in  std_logic_vector(7 downto 0);  -- 8 input lines
+        S : in  std_logic_vector(2 downto 0);  -- 3 select lines
+        Y : out std_logic                       -- Output line
+    );
+end Mux8to1_AmarnathPatelVHDL;
+
+architecture Structural of Mux8to1_AmarnathPatelVHDL is
+
+    -- Component declarations for the Mux4to1 and Mux2to1
+    component Mux4to1_AmarnathPatelVHDL
+        Port (
+            I : in  std_logic_vector(3 downto 0); -- 4 input lines
+            S : in  std_logic_vector(1 downto 0); -- 2 select lines
+            Y : out std_logic                     -- Output line
+        );
+    end component;
+
+    component Mux2to1_AmarnathPatelVHDL
+        Port (
+            I : in  std_logic_vector(1 downto 0); -- 2 input lines
+            S : in  std_logic;                     -- 1 select line
+            Y : out std_logic                      -- Output line
+        );
+    end component;
+
+    signal mux4to1_out : std_logic;                 -- Output from the Mux4to1
+    signal mux2to1_out : std_logic_vector(1 downto 0); -- Output from the Mux2to1
+
+begin
+    -- Instantiate the first Mux4to1 to select from four inputs
+    Mux4to1_inst : Mux4to1_AmarnathPatelVHDL
+        Port map (
+            I => I(3 downto 0),  -- Connect inputs I0 to I3
+            S => S(1 downto 0),  -- Select lines S0 and S1
+            Y => mux4to1_out      -- Output to mux4to1_out
+        );
+
+    -- Connect the Mux4to1 output and the additional inputs to the Mux2to1
+    mux2to1_out(0) <= mux4to1_out;    -- First input for Mux2to1
+    mux2to1_out(1) <= I(5);            -- Second input for Mux2to1
+
+    -- Instantiate the second Mux2to1 to select from the outputs of the first Mux4to1 and additional inputs
+    Mux2to1_inst : Mux2to1_AmarnathPatelVHDL
+        Port map (
+            I => mux2to1_out,     -- Connect outputs from Mux4to1 and I5
+            S => S(2),            -- Select line S2
+            Y => Y                -- Final output
+        );
+
+end Structural;

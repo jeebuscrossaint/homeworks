@@ -1,0 +1,26 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Mux2to1_AmarnathPatelVHDL is
+    Port ( I0 : in STD_LOGIC;
+           I1 : in STD_LOGIC;
+           S  : in STD_LOGIC;
+           Y  : out STD_LOGIC);
+end Mux2to1_AmarnathPatelVHDL;
+
+architecture Behavioral of Mux2to1_AmarnathPatelVHDL is
+    signal S_not, term1, term2 : STD_LOGIC;
+begin
+    -- NOT gate (S')
+    S_not <= not (S and S);
+
+    -- First AND term (S' AND I0)
+    term1 <= not ((S_not and I0) and (S_not and I0));
+
+    -- Second AND term (S AND I1)
+    term2 <= not ((S and I1) and (S and I1));
+
+    -- Final OR term (term1 OR term2)
+    Y <= not (term1 and term2);
+
+end Behavioral;

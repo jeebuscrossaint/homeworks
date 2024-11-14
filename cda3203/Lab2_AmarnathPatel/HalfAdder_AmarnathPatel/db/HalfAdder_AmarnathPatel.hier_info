@@ -1,0 +1,9 @@
+|HalfAdder_AmarnathPatelVHDL
+A => Sum.IN0
+A => Sum.IN1
+B => Sum.IN1
+B => Sum.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,11 @@
+|FullAdder_AmarnathPatelVHDL
+A => nand_out[0].IN0
+A => nand_out[1].IN1
+B => nand_out[0].IN1
+B => nand_out[2].IN1
+CIN => nand_out[4].IN1
+CIN => nand_out[6].IN1
+SUM <= SUM~0.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

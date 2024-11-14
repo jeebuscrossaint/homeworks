@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Mux4to1_AmarnathPatelVHDL is
+    Port ( I0, I1, I2, I3 : in  STD_LOGIC;
+           S0, S1 : in  STD_LOGIC;
+           Y : out STD_LOGIC);
+end Mux4to1_AmarnathPatelVHDL;
+
+architecture Behavioral of Mux4to1_AmarnathPatelVHDL is
+
+    -- Declare Mux2to1_AmarnathPatel component
+    component Mux2to1_AmarnathPatelVHDL
+        Port ( I0 : in STD_LOGIC;
+               I1 : in STD_LOGIC;
+               S  : in STD_LOGIC;
+               Y  : out STD_LOGIC);
+    end component;
+    
+    signal MuxOut1, MuxOut2 : STD_LOGIC;
+
+begin
+
+    -- First level of 2-to-1 Muxes
+    U1: Mux2to1_AmarnathPatelVHDL port map (I0 => I0, I1 => I1, S => S0, Y => MuxOut1);
+    U2: Mux2to1_AmarnathPatelVHDL port map (I0 => I2, I1 => I3, S => S0, Y => MuxOut2);
+
+    -- Final 2-to-1 Mux to select between MuxOut1 and MuxOut2
+    U3: Mux2to1_AmarnathPatelVHDL port map (I0 => MuxOut1, I1 => MuxOut2, S => S1, Y => Y);
+
+end Behavioral;
