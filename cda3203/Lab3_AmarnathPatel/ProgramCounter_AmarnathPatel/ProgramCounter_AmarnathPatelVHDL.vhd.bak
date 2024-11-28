@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity ProgramCounter_AmarnathPatelVHDL is
+    Port (d : in STD_LOGIC_VECTOR(15 downto 0);
+          inc, load, reset, clock : in STD_LOGIC;
+          q : out STD_LOGIC_VECTOR(15 downto 0)
+          );
+end ProgramCounter_AmarnathPatelVHDL;
+
+architecture abc of ProgramCounter_AmarnathPatelVHDL is
+    signal pc_reg : unsigned(15 downto 0) := (others => '0');
+begin
+    process(clock)
+    begin
+        if rising_edge(clock) then
+            if reset = '1' then
+                pc_reg <= (others => '0');  
+            elsif load = '1' then
+                pc_reg <= unsigned(d);  
+            elsif inc = '1' then
+                pc_reg <= pc_reg + 1;  
+            end if;
+            q <= std_logic_vector(pc_reg); 
+        end if;
+    end process;
+end abc;

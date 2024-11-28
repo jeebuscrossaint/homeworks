@@ -1,0 +1,7 @@
+|BitReg1_AmarnathPatelVHDL
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

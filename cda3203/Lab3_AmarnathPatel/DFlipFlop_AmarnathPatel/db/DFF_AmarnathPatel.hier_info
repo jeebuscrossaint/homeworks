@@ -1,0 +1,6 @@
+|DFF_AmarnathPatelVHDL
+D => tmp_q.DATAIN
+clk => tmp_q.CLK
+Q <= tmp_q.DB_MAX_OUTPUT_PORT_TYPE
+
+

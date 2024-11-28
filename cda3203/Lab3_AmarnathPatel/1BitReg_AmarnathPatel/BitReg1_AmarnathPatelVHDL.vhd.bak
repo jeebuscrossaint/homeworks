@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BitReg1_AmarnathPatelVHDL is
+    port (
+        clk   : in std_logic;
+        load  : in std_logic;
+        d     : in std_logic;
+        q     : out std_logic
+    );
+end entity BitReg1_AmarnathPatelVHDL;
+
+architecture behavioral of BitReg1_AmarnathPatelVHDL is
+    signal data : std_logic := '0';
+begin
+    process (clk)
+    begin
+        if rising_edge(clk) then
+            if load = '1' then
+                data <= d;
+            end if;
+        end if;
+    end process;
+
+    q <= data;
+end architecture behavioral;

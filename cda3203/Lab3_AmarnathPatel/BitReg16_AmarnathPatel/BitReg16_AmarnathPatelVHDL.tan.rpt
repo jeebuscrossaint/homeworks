@@ -1,0 +1,265 @@
+Classic Timing Analyzer report for BitReg16_AmarnathPatelVHDL
+Wed Nov 27 13:29:44 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. tsu
+  7. tco
+  8. th
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                   ;
++------------------------------+-------+---------------+-------------+-------------------------------------------------------+-------------------------------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From                                                  ; To                                                    ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------------------------------------------------------+-------------------------------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 3.912 ns    ; load                                                  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out ; --         ; clk      ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 7.451 ns    ; BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out ; q[15]                                                 ; clk        ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -2.775 ns   ; d[10]                                                 ; BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out ; --         ; clk      ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                                                       ;                                                       ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------------------------------------------------------+-------------------------------------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2S15F484C3       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; Off                ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                          ;
++-------+--------------+------------+-------+-------------------------------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From  ; To                                                    ; To Clock ;
++-------+--------------+------------+-------+-------------------------------------------------------+----------+
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:1:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:2:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:3:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:4:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:5:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:6:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:7:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:8:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:9:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:11:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:12:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:13:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:14:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.912 ns   ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.646 ns   ; d[14] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:14:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.462 ns   ; d[11] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:11:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.348 ns   ; d[0]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.343 ns   ; d[4]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:4:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.283 ns   ; d[7]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:7:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.279 ns   ; d[13] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:13:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.270 ns   ; d[15] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.249 ns   ; d[5]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:5:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.174 ns   ; d[3]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:3:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.160 ns   ; d[12] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:12:REG_BIT|dff_out ; clk      ;
+; N/A   ; None         ; 3.138 ns   ; d[8]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:8:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.138 ns   ; d[1]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:1:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.110 ns   ; d[2]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:2:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.069 ns   ; d[9]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:9:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.028 ns   ; d[6]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:6:REG_BIT|dff_out  ; clk      ;
+; N/A   ; None         ; 3.014 ns   ; d[10] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out ; clk      ;
++-------+--------------+------------+-------+-------------------------------------------------------+----------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                            ;
++-------+--------------+------------+-------------------------------------------------------+-------+------------+
+; Slack ; Required tco ; Actual tco ; From                                                  ; To    ; From Clock ;
++-------+--------------+------------+-------------------------------------------------------+-------+------------+
+; N/A   ; None         ; 7.451 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out ; q[15] ; clk        ;
+; N/A   ; None         ; 7.022 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:14:REG_BIT|dff_out ; q[14] ; clk        ;
+; N/A   ; None         ; 6.932 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:5:REG_BIT|dff_out  ; q[5]  ; clk        ;
+; N/A   ; None         ; 6.861 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:3:REG_BIT|dff_out  ; q[3]  ; clk        ;
+; N/A   ; None         ; 6.743 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:6:REG_BIT|dff_out  ; q[6]  ; clk        ;
+; N/A   ; None         ; 6.693 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:9:REG_BIT|dff_out  ; q[9]  ; clk        ;
+; N/A   ; None         ; 6.655 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:12:REG_BIT|dff_out ; q[12] ; clk        ;
+; N/A   ; None         ; 6.535 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT|dff_out  ; q[0]  ; clk        ;
+; N/A   ; None         ; 6.517 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:7:REG_BIT|dff_out  ; q[7]  ; clk        ;
+; N/A   ; None         ; 6.511 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:2:REG_BIT|dff_out  ; q[2]  ; clk        ;
+; N/A   ; None         ; 6.433 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:4:REG_BIT|dff_out  ; q[4]  ; clk        ;
+; N/A   ; None         ; 6.313 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:11:REG_BIT|dff_out ; q[11] ; clk        ;
+; N/A   ; None         ; 6.296 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:13:REG_BIT|dff_out ; q[13] ; clk        ;
+; N/A   ; None         ; 6.236 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out ; q[10] ; clk        ;
+; N/A   ; None         ; 5.447 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:8:REG_BIT|dff_out  ; q[8]  ; clk        ;
+; N/A   ; None         ; 5.444 ns   ; BitReg1_AmarnathPatelVHDL:\GEN_REG:1:REG_BIT|dff_out  ; q[1]  ; clk        ;
++-------+--------------+------------+-------------------------------------------------------+-------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                 ;
++---------------+-------------+-----------+-------+-------------------------------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From  ; To                                                    ; To Clock ;
++---------------+-------------+-----------+-------+-------------------------------------------------------+----------+
+; N/A           ; None        ; -2.775 ns ; d[10] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -2.789 ns ; d[6]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:6:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -2.830 ns ; d[9]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:9:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -2.871 ns ; d[2]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:2:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -2.899 ns ; d[8]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:8:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -2.899 ns ; d[1]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:1:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -2.921 ns ; d[12] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:12:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -2.935 ns ; d[3]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:3:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.010 ns ; d[5]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:5:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.031 ns ; d[15] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.040 ns ; d[13] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:13:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.044 ns ; d[7]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:7:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.104 ns ; d[4]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:4:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.109 ns ; d[0]  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.223 ns ; d[11] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:11:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.407 ns ; d[14] ; BitReg1_AmarnathPatelVHDL:\GEN_REG:14:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:1:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:2:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:3:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:4:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:5:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:6:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:7:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:8:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:9:REG_BIT|dff_out  ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:11:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:12:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:13:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:14:REG_BIT|dff_out ; clk      ;
+; N/A           ; None        ; -3.673 ns ; load  ; BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out ; clk      ;
++---------------+-------------+-----------+-------+-------------------------------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Nov 27 13:29:44 2024
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off BitReg16_AmarnathPatelVHDL -c BitReg16_AmarnathPatelVHDL --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Info: No valid register-to-register data paths exist for clock "clk"
+Info: tsu for register "BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT|dff_out" (data pin = "load", clock pin = "clk") is 3.912 ns
+    Info: + Longest pin to register delay is 6.277 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.857 ns) = 0.857 ns; Loc. = PIN_AA17; Fanout = 16; PIN Node = 'load'
+        Info: 2: + IC(4.674 ns) + CELL(0.746 ns) = 6.277 ns; Loc. = LCFF_X14_Y19_N19; Fanout = 1; REG Node = 'BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT|dff_out'
+        Info: Total cell delay = 1.603 ns ( 25.54 % )
+        Info: Total interconnect delay = 4.674 ns ( 74.46 % )
+    Info: + Micro setup delay of destination is 0.090 ns
+    Info: - Shortest clock path from clock "clk" to destination register is 2.455 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 16; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.640 ns) + CELL(0.618 ns) = 2.455 ns; Loc. = LCFF_X14_Y19_N19; Fanout = 1; REG Node = 'BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT|dff_out'
+        Info: Total cell delay = 1.472 ns ( 59.96 % )
+        Info: Total interconnect delay = 0.983 ns ( 40.04 % )
+Info: tco from clock "clk" to destination pin "q[15]" through register "BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out" is 7.451 ns
+    Info: + Longest clock path from clock "clk" to source register is 2.455 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 16; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.640 ns) + CELL(0.618 ns) = 2.455 ns; Loc. = LCFF_X14_Y19_N13; Fanout = 1; REG Node = 'BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out'
+        Info: Total cell delay = 1.472 ns ( 59.96 % )
+        Info: Total interconnect delay = 0.983 ns ( 40.04 % )
+    Info: + Micro clock to output delay of source is 0.094 ns
+    Info: + Longest register to pin delay is 4.902 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X14_Y19_N13; Fanout = 1; REG Node = 'BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT|dff_out'
+        Info: 2: + IC(2.758 ns) + CELL(2.144 ns) = 4.902 ns; Loc. = PIN_N2; Fanout = 0; PIN Node = 'q[15]'
+        Info: Total cell delay = 2.144 ns ( 43.74 % )
+        Info: Total interconnect delay = 2.758 ns ( 56.26 % )
+Info: th for register "BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out" (data pin = "d[10]", clock pin = "clk") is -2.775 ns
+    Info: + Longest clock path from clock "clk" to destination register is 2.455 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 16; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.640 ns) + CELL(0.618 ns) = 2.455 ns; Loc. = LCFF_X14_Y19_N23; Fanout = 1; REG Node = 'BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out'
+        Info: Total cell delay = 1.472 ns ( 59.96 % )
+        Info: Total interconnect delay = 0.983 ns ( 40.04 % )
+    Info: + Micro hold delay of destination is 0.149 ns
+    Info: - Shortest pin to register delay is 5.379 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.807 ns) = 0.807 ns; Loc. = PIN_T13; Fanout = 1; PIN Node = 'd[10]'
+        Info: 2: + IC(4.364 ns) + CELL(0.053 ns) = 5.224 ns; Loc. = LCCOMB_X14_Y19_N22; Fanout = 1; COMB Node = 'BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out~feeder'
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 5.379 ns; Loc. = LCFF_X14_Y19_N23; Fanout = 1; REG Node = 'BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT|dff_out'
+        Info: Total cell delay = 1.015 ns ( 18.87 % )
+        Info: Total interconnect delay = 4.364 ns ( 81.13 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 191 megabytes
+    Info: Processing ended: Wed Nov 27 13:29:44 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

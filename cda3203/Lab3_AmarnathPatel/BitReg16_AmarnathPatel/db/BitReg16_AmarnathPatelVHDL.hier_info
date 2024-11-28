@@ -1,0 +1,179 @@
+|BitReg16_AmarnathPatelVHDL
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:0:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:1:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:2:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:3:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:4:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:5:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:6:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:7:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:8:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:9:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:10:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:11:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:12:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:13:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:14:REG_BIT.clk
+clk => BitReg1_AmarnathPatelVHDL:GEN_REG:15:REG_BIT.clk
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:0:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:1:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:2:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:3:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:4:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:5:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:6:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:7:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:8:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:9:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:10:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:11:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:12:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:13:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:14:REG_BIT.load
+load => BitReg1_AmarnathPatelVHDL:GEN_REG:15:REG_BIT.load
+d[0] => BitReg1_AmarnathPatelVHDL:GEN_REG:0:REG_BIT.d
+d[1] => BitReg1_AmarnathPatelVHDL:GEN_REG:1:REG_BIT.d
+d[2] => BitReg1_AmarnathPatelVHDL:GEN_REG:2:REG_BIT.d
+d[3] => BitReg1_AmarnathPatelVHDL:GEN_REG:3:REG_BIT.d
+d[4] => BitReg1_AmarnathPatelVHDL:GEN_REG:4:REG_BIT.d
+d[5] => BitReg1_AmarnathPatelVHDL:GEN_REG:5:REG_BIT.d
+d[6] => BitReg1_AmarnathPatelVHDL:GEN_REG:6:REG_BIT.d
+d[7] => BitReg1_AmarnathPatelVHDL:GEN_REG:7:REG_BIT.d
+d[8] => BitReg1_AmarnathPatelVHDL:GEN_REG:8:REG_BIT.d
+d[9] => BitReg1_AmarnathPatelVHDL:GEN_REG:9:REG_BIT.d
+d[10] => BitReg1_AmarnathPatelVHDL:GEN_REG:10:REG_BIT.d
+d[11] => BitReg1_AmarnathPatelVHDL:GEN_REG:11:REG_BIT.d
+d[12] => BitReg1_AmarnathPatelVHDL:GEN_REG:12:REG_BIT.d
+d[13] => BitReg1_AmarnathPatelVHDL:GEN_REG:13:REG_BIT.d
+d[14] => BitReg1_AmarnathPatelVHDL:GEN_REG:14:REG_BIT.d
+d[15] => BitReg1_AmarnathPatelVHDL:GEN_REG:15:REG_BIT.d
+q[0] <= BitReg1_AmarnathPatelVHDL:GEN_REG:0:REG_BIT.q
+q[1] <= BitReg1_AmarnathPatelVHDL:GEN_REG:1:REG_BIT.q
+q[2] <= BitReg1_AmarnathPatelVHDL:GEN_REG:2:REG_BIT.q
+q[3] <= BitReg1_AmarnathPatelVHDL:GEN_REG:3:REG_BIT.q
+q[4] <= BitReg1_AmarnathPatelVHDL:GEN_REG:4:REG_BIT.q
+q[5] <= BitReg1_AmarnathPatelVHDL:GEN_REG:5:REG_BIT.q
+q[6] <= BitReg1_AmarnathPatelVHDL:GEN_REG:6:REG_BIT.q
+q[7] <= BitReg1_AmarnathPatelVHDL:GEN_REG:7:REG_BIT.q
+q[8] <= BitReg1_AmarnathPatelVHDL:GEN_REG:8:REG_BIT.q
+q[9] <= BitReg1_AmarnathPatelVHDL:GEN_REG:9:REG_BIT.q
+q[10] <= BitReg1_AmarnathPatelVHDL:GEN_REG:10:REG_BIT.q
+q[11] <= BitReg1_AmarnathPatelVHDL:GEN_REG:11:REG_BIT.q
+q[12] <= BitReg1_AmarnathPatelVHDL:GEN_REG:12:REG_BIT.q
+q[13] <= BitReg1_AmarnathPatelVHDL:GEN_REG:13:REG_BIT.q
+q[14] <= BitReg1_AmarnathPatelVHDL:GEN_REG:14:REG_BIT.q
+q[15] <= BitReg1_AmarnathPatelVHDL:GEN_REG:15:REG_BIT.q
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:0:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:1:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:2:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:3:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:4:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:5:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:6:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:7:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:8:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:9:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:10:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:11:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:12:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:13:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:14:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BitReg16_AmarnathPatelVHDL|BitReg1_AmarnathPatelVHDL:\GEN_REG:15:REG_BIT
+clk => dff_out.CLK
+load => dff_out.ENA
+d => dff_out.DATAIN
+q <= dff_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BitReg16_AmarnathPatelVHDL is
+    Port (clk, load : in std_logic;
+          d   : in std_logic_vector(15 downto 0);
+          q   : out std_logic_vector(15 downto 0)
+    );
+end entity BitReg16_AmarnathPatelVHDL;
+
+architecture abc of BitReg16_AmarnathPatelVHDL is
+    component BitReg1_AmarnathPatelVHDL is
+        Port (clk, load, d : in std_logic;
+              q : out std_logic);
+    end component;
+
+begin
+    GEN_REG: for i in 0 to 15 generate
+        REG_BIT: BitReg1_AmarnathPatelVHDL
+            port map (clk => clk, load => load, d => d(i), q => q(i));
+    end generate GEN_REG;
+end architecture abc;
