@@ -1,0 +1,43 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+Part2_AmarnathPatel.com -- emu8086 assembler version: 4.08  
+ 
+[ 11/29/2024  --  11:03:06 AM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       ; CDA3203 Dr. Petrie Fall 2024
+[   2]        :                                       ; Amarnath Patel Z23614792
+[   3]        :                                       ; Part 2
+[   4]        :                                       ORG 100h ; required directive for 1 segment .com code
+[   5]        :                                       
+[   6]        :                                       ; put FIRST in AL register
+[   7]    0100: A0 0D 01                              MOV AL, FIRST
+[   8]        :                                       
+[   9]        :                                       ; put LAST in BL register
+[  10]    0103: 8A 1E 0E 01                           MOV BL, LAST
+[  11]        :                                       
+[  12]        :                                       ; Multiply AX = AL * BL
+[  13]    0107: F6 E3                                 MUL BL
+[  14]        :                                       
+[  15]        :                                       ; put AX in RESULT
+[  16]    0109: A3 0F 01                              MOV RESULT, AX
+[  17]        :                                       
+[  18]    010C: C3                                    RET ; required to return to the operating system
+[  19]        :                                       
+[  20]        :                                       ; Assembler Directives to define 3 Variables
+[  21]    010D: 00                                    FIRST DB ? ; defines but does not initialize FIRST
+[  22]    010E: 00                                    LAST DB ? ; defines but does not initialize LAST
+[  23]    010F: 00 00                                 RESULT DW ? ; defines but does not initialize
+[  24]        :                                       
+[  25]        :                                       
+ 
+===================================================================================================
+ 
+
+
+
+
+===================================================================================================

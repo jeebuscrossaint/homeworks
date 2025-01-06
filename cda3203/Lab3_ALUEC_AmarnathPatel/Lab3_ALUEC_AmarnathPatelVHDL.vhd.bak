@@ -1,0 +1,50 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity Lab3_ALUEC_AmarnathPatelVHDL is
+    Port ( 
+        x       : in  STD_LOGIC_VECTOR(15 downto 0);
+        y       : in  STD_LOGIC_VECTOR(15 downto 0);
+        zx      : in  STD_LOGIC;
+        nx      : in  STD_LOGIC;
+        zy      : in  STD_LOGIC;
+        ny      : in  STD_LOGIC;
+        f       : in  STD_LOGIC;
+        no      : in  STD_LOGIC;
+        output  : buffer STD_LOGIC_VECTOR(15 downto 0);
+        zr      : buffer STD_LOGIC;
+        ng      : buffer STD_LOGIC
+    );
+end Lab3_ALUEC_AmarnathPatelVHDL;
+
+architecture Behavioral of Lab3_ALUEC_AmarnathPatelVHDL is
+    signal x_processed : STD_LOGIC_VECTOR(15 downto 0);
+    signal y_processed : STD_LOGIC_VECTOR(15 downto 0);
+    signal f_output    : STD_LOGIC_VECTOR(15 downto 0);
+begin
+    -- Zero-x processing
+    x_processed <= (others => '0') when zx = '1' else x;
+    
+    -- Negate-x processing
+    x_processed <= not x_processed when nx = '1' else x_processed;
+    
+    -- Zero-y processing
+    y_processed <= (others => '0') when zy = '1' else y;
+    
+    -- Negate-y processing
+    y_processed <= not y_processed when ny = '1' else y_processed;
+    
+    -- Function processing (f)
+    f_output <= STD_LOGIC_VECTOR(unsigned(x_processed) + unsigned(y_processed)) when f = '1' 
+                else x_processed and y_processed;
+    
+    -- Output processing
+    output <= not f_output when no = '1' else f_output;
+    
+    -- Zero flag (zr)
+    zr <= '1' when output = (output'range => '0') else '0';
+    
+    -- Negative flag (ng)
+    ng <= '1' when output(15) = '1' else '0';
+end Behavioral;
